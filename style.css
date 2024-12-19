@@ -1,0 +1,211 @@
+/* Resetando padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    border-radius: 10px;
+    background-color: #af0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header .title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seção Intro */
+.intro {
+    background-color: #fff;
+    color: #ff0000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro .animation {
+  animation: fadeIn 2s ease-in-out;
+}
+/*imagem CLicavel*/
+img {
+    height: 150px;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+
+
+}
+/* Notícia */
+.noticias {
+  background-color: #ecf0f1;
+  color:black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.noticias h2 {
+  margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1em;
+}
+/*Video*/
+video{
+    height: 500px;
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+}
+h2 {
+    
+    color: black;
+}
+h3 {
+    color: #ce0000;
+}
+h4 {
+    text-align: center;
+    color: red;
+    font-size:25px;
+}
+/* Seção de Contato */
+.contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contato input,
+.contato textarea {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+    .contato button {
+        width: 80%;
+        max-width: 600px;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #af0000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1em;
+    }
+
+.contato button:hover {
+  background-color: black;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar ul {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  .contato form {
+    width: 90%;
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  h1 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  
+  h2 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+}
